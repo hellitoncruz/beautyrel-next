@@ -87,7 +87,7 @@
 		// Page loader & Page transition
 		if (plugins.preloader.length && !isNoviBuilder) {
 			pageTransition({
-				target: document.querySelector( '.page' ),
+				target: document.querySelector( '.page-container' ),
 				delay: 0,
 				duration: 500,
 				classIn: 'fadeIn',
@@ -1636,7 +1636,7 @@
 						placeholder: select.attr("data-placeholder") ? select.attr("data-placeholder") : false,
 						minimumResultsForSearch: select.attr("data-minimum-results-search") ? select.attr("data-minimum-results-search") : 10,
 						maximumSelectionSize: 3,
-						dropdownParent: $('.page'),
+						dropdownParent: $('.page-container'),
 						containerCssClass: select.attr("data-container-class") ? select.attr("data-container-class") : '',
 						dropdownCssClass: select.attr("data-dropdown-class") ? select.attr("data-dropdown-class") : '',
 					};
